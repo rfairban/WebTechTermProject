@@ -13,7 +13,7 @@
 
 </head>
 <body>
-
+<!-- navbar!-->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -35,8 +35,7 @@
   </div>
 </nav>
 
-
-  
+<!-- header, instructions, diceroll-->
 <div class="container text-center">    
   <div class = "well">
     <h3>Instructions</h3><br>
@@ -48,7 +47,9 @@
     </div>
     
     
-  <div class = "container">
+<div class = "container">
+<!-- text fields!-->
+<div class="row">
 
  <div class="col-md-4">
   <label for="usr">Name:</label>
@@ -73,7 +74,7 @@
 <div class="col-md-4">
   <label for="usr">Height:</label>
   <input type="text" class="form-control" id="usr">
- </div>
+  </div>
     
 <div class="col-md-4">
   <label for="usr">Weight:</label>
@@ -84,10 +85,13 @@
   <label for="usr">Experience Points:</label>
   <input type="text" class="form-control" id="usr">
  </div>
+  </div> 
+      
+<!-- Dropdown Menus!-->    
 <div class="row">
 <div class="col-md-4">
-       <div class="btn-group">
-          <button type="button" class="btn btn-default">Action</button>
+              <div class="btn-group">
+          <button type="button" class="btn btn-default">Background</button>
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
             <span class="caret"></span>
             <span class="sr-only">Toggle Dropdown</span>
@@ -100,13 +104,16 @@
             <li><a href="#">Separated link</a></li>
           </ul>
         </div>
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#bgmodal">?</button> 
     
  </div>
-
+ 
+      
+      
 <div class="col-md-4">
  
        <div class="btn-group">
-          <button type="button" class="btn btn-default">Action</button>
+          <button type="button" class="btn btn-default">Language</button>
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
             <span class="caret"></span>
             <span class="sr-only">Toggle Dropdown</span>
@@ -119,14 +126,14 @@
             <li><a href="#">Separated link</a></li>
           </ul>
         </div>
-    
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#langmodel">?</button>
  </div>
     
       
 <div class="col-md-4">
  
        <div class="btn-group">
-          <button type="button" class="btn btn-default">Action</button>
+          <button type="button" class="btn btn-default">Faction</button>
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
             <span class="caret"></span>
             <span class="sr-only">Toggle Dropdown</span>
@@ -139,54 +146,277 @@
             <li><a href="#">Separated link</a></li>
           </ul>
         </div>
-    
- </div>
-    <div class="col-md-4">
- 
-       <div class="btn-group">
-          <button type="button" class="btn btn-default">Action</button>
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <span class="caret"></span>
-            <span class="sr-only">Toggle Dropdown</span>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-              <li class="divider"></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div>
-    
- </div>
-    <div class="col-md-4">
- 
-       <div class="btn-group">
-          <button type="button" class="btn btn-default">Action</button>
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <span class="caret"></span>
-            <span class="sr-only">Toggle Dropdown</span>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-              <li class="divider"></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div>
-    
- </div>
-        
-
-
-      
-
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#factmodel">?</button>
     </div>
-<footer class="container-fluid text-center">
     
+     <div class="col-md-4">
+ 
+       <div class="btn-group">
+           
+         
+          
+              
+          </button>
+          
+            <div id='classes'>
+                    <select>
+                    </select>
+                </div>
+            
+          </ul>
+        </div>
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#classmodel">?</button>
+      </div>
+      
+<div class="row">
+   
+ </div>
+<div class="col-md-4">
+ 
+       <div class="btn-group">
+          <button type="button" class="btn btn-default">Race</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+              <li class="divider"></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+     <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#racemodel">?</button>
+          </div>
+          
+          
+<div class="col-md-4">
+ 
+       <div class="btn-group">
+          <button type="button" class="btn btn-default">Alignment</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+              <li class="divider"></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+     <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#alignmodel">?</button>
+          </div>
+          
+<div class="col-md-4">
+ 
+       <div class="btn-group">
+          <button type="button" class="btn btn-default">Ability</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+              <li class="divider"></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+     <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#abmodel">?</button>
+          </div>
+          
+<div class="col-md-4">
+ 
+       <div class="btn-group">
+          <button type="button" class="btn btn-default">Skills</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+              <li class="divider"></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+           
+        </div>
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#skmodel">?</button>
+          </div>
+ 
+      </div>
+          
+   </div>
+   <footer class="container-fluid text-center">
+    </div>
+    
+    
+</div>
 </footer>
+ 
+    
 
+
+<!-- Modals-->
+<div id="bgmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Backgrounds:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different backgrounds.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    
+<div id="langmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">languages:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different languages.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="factmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Factions:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different factions.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+<div id="classmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Classes:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different classes.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<div id="racemodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Race:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different races.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+<div id="alignmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Alignment:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different Alignments.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+<div id="abmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Ability:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different abilities.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+    <div id="abmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Skills:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different Skills.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+ 
 </body>
 </html>
 <script src="js/rng.js"></script>
+<script src="js/classes.js"></script>
