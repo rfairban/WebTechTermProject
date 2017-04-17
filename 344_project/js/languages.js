@@ -1,4 +1,4 @@
-var language = ["language:", "language 2"];
+var language = ["Language:", "Abyssal", "Infernal", "Elven", "Draconic", "Celestial", "Common", "Deep Speech", "Draconic", "Dwarvish", "Elvish" ];
 
 
 
