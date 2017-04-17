@@ -1,4 +1,4 @@
-var factions = ["Factions:", "faction 2"];
+var factions = ["Factions:","The Lords' Alliance"," The Zhentarim"," The Emerald Enclave"," The Order Of The Gauntlet ","The Harpers"];
 
 
 
