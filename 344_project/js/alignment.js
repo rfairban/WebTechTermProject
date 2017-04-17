@@ -1,4 +1,7 @@
-var alignment = ["Alignment:", "alignment 2"];
+var alignment = ["Alignment:", 
+"Lawful good","	Neutral good","	Chaotic good","Lawful neutral","(True) neutral","	Chaotic neutral","Lawful evil","	Neutral evil","	Chaotic evil"
+];
+
 
 
 
