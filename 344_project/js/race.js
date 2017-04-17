@@ -1,4 +1,4 @@
-var race = ["Race:", "race 2"];
+var race = ["Race:", "Dragonborn",  "High Elf", "Wood Elf", "Dragonborn", "Hill Dwarf", "Mountain Dwarf", "Grey Dwarf", "Forest Gnome", "Rock Gnome", "Deep Gnome", "Half-Elf", "Half-Orc", "Lightfoot Halfling", "Stout Halfling", " Human", " Tiefling", "Genasi", "Goliath" ];
 
 
 
