@@ -1,4 +1,5 @@
-var ability = ["Ability:", "ability 2"];
+var ability = ["Ability:", "Strength","Dexterity","Constitution","Intellect","Wisdom","Charisma"
+];
 
 
 
