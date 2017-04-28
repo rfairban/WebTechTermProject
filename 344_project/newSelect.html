@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Character Creator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    
+      
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!-- navbar!-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="credits.html">Team 13</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li class="active"><a href="select.html">Character Sheet</a></li>
+        <li><a href="myChar.html">My Character</a></li>
+      </ul>
+        
+    </div>
+  </div>
+</nav>
+
+<!-- header, instructions, diceroll-->
+<div class="container text-center">    
+  <div class = "well">
+    <h3>Instructions</h3><br>
+      <p>instructions go here</p>
+      
+<button id="question7" class="randomNum randomNode" min="3" max="18" master="question7" combinationsArray = "1 4 10 21 38 62 91 122 148 167 172 160 131 94 54 21">Roll the Dice</button>
+
+    </div>  
+    </div>
+    
+    
+<div class = "container">
+<!-- text fields!-->
+    <div class = well-lg>
+<div class="row">
+
+ <div class="col-md-4">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" id="usr">
+ </div>
+    
+ <div class="col-md-4">
+  <label for="usr">Sex:</label>
+  <input type="text" class="form-control" id="usr">
+ </div>
+ 
+ <div class="col-md-4">
+  <label for="usr">Player:</label>
+  <input type="text" class="form-control" id="usr">
+ </div>  
+    
+<div class="col-md-4">
+  <label for="usr">Age:</label>
+  <input type="text" class="form-control" id="usr">
+ </div>
+    
+<div class="col-md-4">
+  <label for="usr">Height:</label>
+  <input type="text" class="form-control" id="usr">
+  </div>
+    
+<div class="col-md-4">
+  <label for="usr">Weight:</label>
+  <input type="text" class="form-control" id="usr">
+ </div>
+
+<div class="col-md-4">
+  <label for="usr">Experience Points:</label>
+  <input type="text" class="form-control" id="usr">
+ </div>
+  </div> 
+      
+<!-- Dropdown Menus!-->    
+<div class="row">
+<div class="col-md-4">
+       <div class="btn-group">
+            <div id='background'>
+                    <select>
+                    </select>
+                </div>
+        </div>
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#bgmodal">?</button> 
+    
+ </div>
+ 
+      
+      
+<div class="col-md-4">
+       <div class="btn-group">
+            <div id='language'>
+                    <select>
+                    </select>
+                </div>
+        </div>
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#langmodel">?</button>
+ </div>
+    
+      
+ <div class="col-md-4">
+       <div class="btn-group">
+            <div id='factions'>
+                    <select>
+                    </select>
+                </div>
+        </div>
+     
+     
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#factmodel">?</button>
+    </div>
+        </div>
+<div class="row">
+     <div class="col-md-4">
+       <div class="btn-group">
+            <div id='classes'>
+                    <select>
+                    </select>
+                </div>
+           
+        </div>
+         
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#classmodel">?</button>
+      </div>
+ 
+   
+<div class="col-md-4">
+       <div class="btn-group">
+            <div id='race'>
+                    <select>
+                    </select>
+                </div>
+        </div>
+     <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#racemodel">?</button>
+          </div>
+          
+          
+<div class="col-md-4">
+       <div class="btn-group">
+            <div id='alignment'>
+                    <select>
+                    </select>
+                </div>
+        </div>
+     <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#alignmodel">?</button>
+          </div>
+    </div>
+ <div class="row">         
+<div class="col-md-4">
+       <div class="btn-group">
+            <div id='ability'>
+                    <select>
+                    </select>
+                </div>
+        </div>
+     <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#abmodel">?</button>
+          </div>
+    
+   
+<div class="col-md-4">
+       <div class="btn-group">
+            <div id='skills'>
+                    <select>
+                    </select>
+                </div>
+        </div>
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#skmodel">?</button>
+          </div>
+ 
+          
+   </div>
+   <footer class="container-fluid text-center">
+       </div>
+    </div>
+    </div>
+    </div>
+
+
+</footer>
+ 
+    
+
+
+<!-- Modals-->
+<div id="bgmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Backgrounds:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different backgrounds.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    
+<div id="langmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">languages:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different languages.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="factmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Factions:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different factions.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+<div id="classmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Classes:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different classes.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<div id="racemodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Race:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different races.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+<div id="alignmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Alignment:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different Alignments.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+<div id="abmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Ability:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different abilities.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+    <div id="skmodel" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Skills:</h4>
+      </div>
+      <div class="modal-body">
+        <p>The different Skills.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+ 
+</body>
+</html>
+<script src="js/newRNG.js"></script>
+<script src="js/classes.js"></script>
+<script src="js/factions.js"></script>
+<script src="js/backgrounds.js"></script>
+<script src="js/languages.js"></script>
+<script src="js/race.js"></script>
+<script src="js/alignment.js"></script>
+<script src="js/ability.js"></script>
+<script src="js/skills.js"></script>
