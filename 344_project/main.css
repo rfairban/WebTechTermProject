@@ -10,6 +10,7 @@
 }
 
 body {
+color:#101010;
   margin: 0;
 }
 
@@ -287,8 +288,7 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+  background-color: #eaeaea;
 }
 
 input,button,select,textarea {
@@ -5452,7 +5452,8 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 }
 
 .well-lg {
-  padding: 24px;
+    background-color: #c6c6c6;
+  padding: 100px;
   border-radius: 6px;
 }
 
