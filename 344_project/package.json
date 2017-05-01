@@ -6,9 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Felicia Buchanan, Ryan Fairbanks, Eli Poulos, Michaela Scilex",
   "license": "ISC",
-  "description": "",
+  "description": "Website used to create and save Dungeons and Dragons characters.",
   "dependencies": {
     "express": "^4.15.2"
   }
