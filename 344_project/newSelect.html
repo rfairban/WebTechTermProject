@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="termproject">
 <head>
   <title>Character Creator</title>
   <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body ng-controller="CharacterController">
 <!-- navbar!-->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -44,7 +44,7 @@
 <button id="question7" class="randomNum randomNode" min="3" max="18" master="question7" combinationsArray = "1 4 10 21 38 62 91 122 148 167 172 160 131 94 54 21">Roll the Dice</button>
 
     </div>  
-    </div>
+</div>
     
     
 <div class = "container">
@@ -183,20 +183,46 @@
     <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#skmodel">?</button>
           </div>
  
-          
+    
    </div>
-   <footer class="container-fluid text-center">
+   <div class="container-fluid text-center">
 	<br>
        <br>
        <br>
-       <div><button id = submit> <h3>Submit</h3></button></div>
-       </div>
+       <div><button id = submit ng-click="add()"> <h3>Submit</h3></button></div>
+       
+       <div>
+			<p>Press 'All' for a complete list of the characters in our database.</p>
+			<input type="text" ng-model="characters" style="display:none">
+			<button ng-click="all()">All</button>
+
+			<table>
+				<tr ng-repeat="c in characters">
+					<td>{{c.name}}</td>
+					<td>{{c.sex}}</td>
+					<td>{{c.player}}</td>
+                    <td>{{c.age}}</td>
+					<td>{{c.height}}</td>
+					<td>{{c.weight}}</td>
+                    <td>{{c.xp}}</td>
+					<td>{{c.background}}</td>
+					<td>{{c.class}}</td>
+                    <td>{{c.ability}}</td>
+					<td>{{c.language}}</td>
+					<td>{{c.race}}</td>
+                    <td>{{c.skill}}</td>
+					<td>{{c.faction}}</td>
+					<td>{{c.alignment}}</td>
+                    
+					<td><button ng-click="$parent.remove(m)">Remove</button></td>
+				</tr>
+			</table>
     </div>
-    </div>
-    </div>
+       
+    
 
 
-</footer>
+</div>
  
     
 
@@ -370,6 +396,8 @@
 		</script>
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src='character.js'></script>
+    </div>
+    </div>
 </body>
 </html>
 <script src="js/newRNG.js"></script>

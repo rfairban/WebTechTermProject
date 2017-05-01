@@ -30,6 +30,7 @@
                 "alignment" : $scope.alignment
 			};
 			$scope.characters.push(newCharacter);
+            console.log(newCharacter);
 			$.post('putCharacter', newCharacter);
 		  $scope.name = $scope.sex = $scope.player = $scope.age = $scope.height = $scope.weight = $scope.xp = $scope.background = $scope.class = $scope.ability = $scope.language = $scope.race = $scope.skill = $scope.faction = $scope.alignment = '';
 		};
