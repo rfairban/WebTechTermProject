@@ -39,9 +39,21 @@
 <div class="container text-center">    
   <div class = "well">
     <h3>Instructions</h3><br>
-      <p>Use the form below to begin creating your character. Press "Roll the Dice" to generate a random number should you need one. On submit, your character information is stored and can be accessed on the "My Character" page.</p>
+      <p>Use the form below to begin creating your character. Press the "Roll" buttons below to simulate a dice roll, should you need to. The first "Roll" button simulates rolling 4 6-sided dice and dropping the lowest value (for ability scores), while the others simulate rolling a single die of the indicated number of sides. On submit, your character information is stored and can be accessed on the "My Character" page.</p>
       
-<button id="question7" class="randomNum randomNode" min="3" max="18" master="question7" combinationsArray = "1 4 10 21 38 62 91 122 148 167 172 160 131 94 54 21">Roll the Dice</button>
+<button id="4d6D1" class="randomNum randomNode" min="3" max="18" master="4d6D1" combinationsArray = "1 4 10 21 38 62 91 122 148 167 172 160 131 94 54 21">Roll 4d6, drop the lowest</button>
+      
+<button id="d4" class="randomNum randomNode" min="1" max="4" master="d4" combinationsArray = "1 1 1 1">Roll d4</button>
+      
+<button id="d6" class="randomNum randomNode" min="1" max="6" master="d6" combinationsArray = "1 1 1 1 1 1">Roll d6</button>
+      
+<button id="d8" class="randomNum randomNode" min="1" max="8" master="d8" combinationsArray = "1 1 1 1 1 1 1 1">Roll d8</button>
+      
+<button id="d10" class="randomNum randomNode" min="1" max="10" master="d10" combinationsArray = "1 1 1 1 1 1 1 1 1 1">Roll d10</button>
+
+<button id="d12" class="randomNum randomNode" min="1" max="12" master="d12" combinationsArray = "1 1 1 1 1 1 1 1 1 1 1 1">Roll d12</button>
+      
+<button id="d20" class="randomNum randomNode" min="1" max="20" master="d20" combinationsArray = "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1">Roll d20</button>
 
     </div>  
 </div>
@@ -54,12 +66,12 @@
 
  <div class="col-md-4">
   <label for="usr">Name:</label>
-  <input type="text" ng-model="name" placeholder="name" class="form-control" id="usr">
+  <input type="text" ng-model="name" placeholder="character name" class="form-control" id="usr">
  </div>
     
  <div class="col-md-4">
   <label for="usr">Sex:</label>
-  <input type="text" ng-model="sex" placeholder="sex" class="form-control" id="usr">
+  <input type="text" ng-model="sex" placeholder="character sex" class="form-control" id="usr">
  </div>
  
  <div class="col-md-4">
@@ -69,17 +81,17 @@
     
 <div class="col-md-4">
   <label for="usr">Age:</label>
-  <input type="text" ng-model="age" placeholder="age" class="form-control" id="usr">
+  <input type="text" ng-model="age" placeholder="character age -- include unit (years, days, etc.)" class="form-control" id="usr">
  </div>
     
 <div class="col-md-4">
   <label for="usr">Height:</label>
-  <input type="text" ng-model="height" placeholder="height" class="form-control" id="usr">
+  <input type="text" ng-model="height" placeholder="character height -- include unit (feet, inches, cm, etc.)" class="form-control" id="usr">
   </div>
     
 <div class="col-md-4">
   <label for="usr">Weight:</label>
-  <input type="text" ng-model="weight" placeholder="weight" class="form-control" id="usr">
+  <input type="text" ng-model="weight" placeholder="character weight -- include unit (tons, lbs, grams, etc.)" class="form-control" id="usr">
  </div>
 
 <div class="col-md-4">
