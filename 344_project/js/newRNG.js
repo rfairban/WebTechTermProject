@@ -51,7 +51,7 @@ function updateSlaves(master,randomValue) {
   for (var i = 0; i < randomNode.length; i++) {
     var nodeMaster = randomNode[i];
     if(randomNode[i].getAttribute("master")==master)
-      randomNode[i].innerText = randomValue;
+      randomNode[i].innerText = master + "\n" + randomValue;
   }
 }
 
