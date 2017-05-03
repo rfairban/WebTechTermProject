@@ -199,29 +199,41 @@
        <div><button id = submit ng-click="add()"> <h3>Submit</h3></button></div>
        
        <div>
-			<p>Press 'All' for a complete list of the characters in our database.</p>
-			<input type="text" ng-model="characters" style="display:none">
-			<button ng-click="all()">All</button>
+			<p>The following table shows a list of all characters in the database.</p>
 
 			<table>
 				<tr ng-repeat="c in characters">
-					<td>{{c.name}}</td>
-					<td>{{c.sex}}</td>
-					<td>{{c.player}}</td>
-                    <td>{{c.age}}</td>
-					<td>{{c.height}}</td>
-					<td>{{c.weight}}</td>
-                    <td>{{c.xp}}</td>
-					<td>{{c.background}}</td>
-					<td>{{c.class}}</td>
-                    <td>{{c.ability}}</td>
-					<td>{{c.language}}</td>
-					<td>{{c.race}}</td>
-                    <td>{{c.skill}}</td>
-					<td>{{c.faction}}</td>
-					<td>{{c.alignment}}</td>
+                    <td><b>Name:</b>&nbsp;&nbsp;</td><td>{{c.name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Sex:</b>&nbsp;&nbsp;</td><td>{{c.sex}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Player:</b>&nbsp;&nbsp;</td><td>{{c.player}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td><b>Age:</b>&nbsp;&nbsp;</td><td>{{c.age}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Height:</b>&nbsp;&nbsp;</td><td>{{c.height}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Weight:</b>&nbsp;&nbsp;</td><td>{{c.weight}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td><b>XP:</b>&nbsp;&nbsp;</td><td>{{c.xp}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Background:</b>&nbsp;&nbsp;</td><td>{{c.background}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Class:</b>&nbsp;&nbsp;</td><td>{{c.class}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td><b>Ability:</b>&nbsp;&nbsp;</td><td>{{c.ability}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Language:</b>&nbsp;&nbsp;</td><td>{{c.language}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Race:</b>&nbsp;&nbsp;</td><td>{{c.race}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td><b>Skill:</b>&nbsp;&nbsp;</td><td>{{c.skill}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Faction:</b>&nbsp;&nbsp;</td><td>{{c.faction}}&nbsp;&nbsp;</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><b>Alignment</b>:&nbsp;&nbsp;</td><td>{{c.alignment}}&nbsp;&nbsp;</td>
                     
-					<td><button ng-click="$parent.remove(m)">Remove</button></td>
+					<td><button ng-click="remove(c)">Remove</button></td>
 				</tr>
 			</table>
     </div>
